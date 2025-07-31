@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #222;
+}
+
+header.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 6rem;
+  background-color: #fef6f1;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.hero-text p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.hero-text button {
+  padding: 0.7rem 1.5rem;
+  background: orange;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.hero-image img {
+  max-width: 300px;
+  border-radius: 12px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 6rem;
+  background: #fff;
+}
+
+.feature-box {
+  max-width: 300px;
+  text-align: center;
+}
+
+.feature-box img {
+  width: 150px;
+  margin-bottom: 1rem;
+}
+
+.plans {
+  padding: 4rem 6rem;
+  background: #fafafa;
+  text-align: center;
+}
+
+.plan {
+  margin: 1rem auto;
+  padding: 1.5rem;
+  max-width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.faq {
+  padding: 3rem 6rem;
+  background: #fff;
+}
+
+.faq details {
+  margin-bottom: 1rem;
+}
+
+.faq summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.newsletter {
+  padding: 2rem 6rem;
+  background: #fef6f1;
+  text-align: center;
+}
+
+.newsletter input {
+  padding: 0.5rem;
+  width: 250px;
+  margin-right: 0.5rem;
+}
+
+.newsletter button {
+  padding: 0.5rem 1rem;
+  background: orange;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
