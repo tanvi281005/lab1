@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Strong Mind Strong Body</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      background: #f5f7fa;
+      font-family: 'Merriweather', serif;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem 1rem 3rem;
+      text-align: center;
+    }
+
+    /* Full width image container */
+    .header-image {
+      width: 100%;
+      max-height: 250px;
+      overflow: hidden;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .header-image img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 3rem;
+      letter-spacing: 0.12em;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      color: #2c3e50;
+    }
+
+    .quotes {
+      font-style: italic;
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin-bottom: 3rem;
+      line-height: 1.6;
+      color: #555;
+      font-family: 'Merriweather', serif;
+    }
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.top-row {
+  display: flex;
+  gap: 2rem;
+}
+
+.bottom-row {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Remove any previous nth-child styles first */
+.container a:nth-child(4),
+.container a:nth-child(5) {
+  grid-column: auto;
+  grid-row: auto;
+}
+
+/* Place 4th and 5th boxes in 2nd row, centered */
+.container a:nth-child(4) {
+  grid-column: 2;
+  grid-row: 2;
+}
+.container a:nth-child(5) {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+
+
+    .box {
+      background: #d6e4f0;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #34495e;
+      text-transform: uppercase;
+      box-shadow: 0 6px 12px rgba(52, 73, 94, 0.15);
+      cursor: pointer;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+      text-decoration: none;
+      user-select: none;
+      width: 160px;
+      height: 160px;
+    }
+
+    .box:hover {
+      background: #a8c4e4;
+      transform: translateY(-6px);
+      box-shadow: 0 12px 20px rgba(52, 73, 94, 0.25);
+      color: #1f2d3d;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 130px);
+        max-width: 400px;
+        gap: 1.2rem 1.5rem;
+      }
+      .container a:nth-child(4) {
+        grid-column: auto;
+        grid-row: 3 / 4;
+      }
+      .container a:nth-child(5) {
+        grid-column: auto;
+        grid-row: 3 / 4;
+      }
+      .box {
+        width: 100%;
+        height: 130px;
+        font-size: 1.1rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      .quotes {
+        font-size: 1rem;
+        max-width: 90%;
+      }
+      .header-image img {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-image">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80" alt="Strong Mind Strong Body" />
+  </div>
+
+  <h1>Strong Mind Strong Body</h1>
+  <div class="quotes">
+    “A strong body supports a strong mind, and a strong mind guides a strong body.”
+  </div>
+  <div class="container">
+  <div class="top-row">
+    <a href="dance.html" class="box">Dance</a>
+    <a href="gym.html" class="box">Gym</a>
+    <a href="music.html" class="box">Music</a>
+  </div>
+  <div class="bottom-row">
+    <a href="swimming.html" class="box">Swimming</a>
+    <a href="mindfullness.html" class="box">Meditation</a>
+  </div>
+</div>
+
+
+</body>
+</html>

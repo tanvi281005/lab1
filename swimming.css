@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  background: url('pool-bg.jpg') no-repeat center center/cover;
+  height: 90vh;
+  color: #003f5c; /* Dark blue text for better visibility */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+
+.hero-buttons button {
+  padding: 10px 20px;
+  border: 2px solid #003f5c;
+  background: transparent;
+  color: #003f5c;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.swim-section {
+  display: flex;
+  justify-content: space-around;
+  background-color: #00c2f0;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.swim-box {
+  background-color: #009ec3;
+  padding: 30px 20px;
+  width: 28%;
+  border-radius: 10px;
+  font-size: 1.1em;
+}
+
+.swim-box h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.swim-box p {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .swim-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .swim-box {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
