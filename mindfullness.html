@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mindfulness Living</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+    }
+
+    header {
+      background: url('https://via.placeholder.com/1200x400/5a7d3c/ffffff?text=Mindful+Living+Header') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px 50px;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .subscribe-section {
+      background: #74c365;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+      position: relative;
+      z-index: 1;
+    }
+
+    .subscribe-section input[type="email"] {
+      padding: 10px;
+      width: 250px;
+      border-radius: 20px;
+      border: none;
+      margin-right: 10px;
+    }
+
+    .subscribe-section button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      background-color: #c2691a;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px 20px;
+      background-color: #fdf6f6;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: 300px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin: 15px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    .card h2 {
+      color: #4a7d3a;
+      font-size: 1.3em;
+    }
+
+    .card p {
+      font-size: 0.95em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .card a {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 960px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  
+
+  <section class="subscribe-section">
+    <div>
+      Stay Connected — Discover an oasis in your inbox.<br/>
+      <span style="font-weight: normal;">Subscribe for your free lessons and mindful reminders.</span><br><br>
+      <input type="email" placeholder="Enter your email address" />
+      <button>Subscribe Now</button>
+    </div>
+  </section>
+  <header>
+    <img src="meditate5.jpg" alt="Mindful Living Header">
+  </header>
+
+  <section class="cards">
+    <div class="card">
+      <img src="meditate2.jpg" alt="Lessons">
+      <h2>Lessons & Articles</h2>
+      <p>Discover how to cultivate, strengthen and sustain mindfulness here. Find the tools to deepen meditation.</p>
+      <a href="#">Read more</a>
+    </div>
+
+    <div class="card">
+      <img src="meditate4.jpeg" alt="What is Mindfulness">
+      <h2>What is Mindfulness?</h2>
+      <p>Mindfulness is the core of many wisdom traditions and is beneficial for health, happiness and quality of life.</p>
+      <a href="#">Read more</a>
+    </div>
+
+    <div class="card">
+      <img src="meditate3.jpeg" alt="Classes & Retreats">
+      <h2>Classes & Retreats</h2>
+      <p>Dive deeply into mindful awareness at one of our retreats or courses including yoga, meditation and more.</p>
+      <a href="#">Read more</a>
+    </div>
+  </section>
+
+</body>
+</html>
