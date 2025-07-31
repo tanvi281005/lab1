@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music World</title>
+    <style>
+        /* Reset & base */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; color: #333; line-height: 1.6; }
+
+        /* Hero section */
+        .hero {
+            height: 60vh;
+            background: url('background.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.4);
+        }
+        .hero h1 {
+            position: relative;
+            color: #fff;
+            font-size: 3rem;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+        }
+
+        /* Intro text */
+        .intro {
+            padding: 2rem;
+            text-align: center;
+            font-size: 1.2rem;
+            background: #f9f9f9;
+        }
+
+        /* Instruments grid */
+        .instruments {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .instrument-card {
+            display: block;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .instrument-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .instrument-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .instrument-card .content {
+            padding: 1rem;
+        }
+        .instrument-card h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+        .instrument-card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            .intro { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Feel the Rhythm of Music</h1>
+    </section>
+
+    <!-- Intro Text -->
+    <section class="intro">
+        "Music expresses that which cannot be said and on which it is impossible to be silent." – Victor Hugo
+    </section>
+
+    <!-- Instruments Section -->
+    <section class="instruments">
+        <a href="#" class="instrument-card">
+            <img src="guitar.jpg" alt="Guitar">
+            <div class="content">
+                <h3>Guitar</h3>
+                <p>The guitar is a fretted musical instrument that typically has six strings. It is often played with fingers or a pick to produce harmony and melody.</p>
+            </div>
+        </a>
+        <a href="#" class="instrument-card">
+            <img src="cello.jpg" alt="Cello">
+            <div class="content">
+                <h3>Cello</h3>
+                <p>The cello is a bowed string instrument of the violin family. It is known for its deep, rich tone and is essential in orchestras and chamber music.</p>
+            </div>
+        </a>
+        <a href="#" class="instrument-card">
+            <img src="violin.jpg" alt="Violin">
+            <div class="content">
+                <h3>Violin</h3>
+                <p>The violin is the smallest and highest-pitched instrument of the string family. Its versatile sound ranges from sweet and lyrical to bright and fiery.</p>
+            </div>
+        </a>
+        <a href="#" class="instrument-card">
+            <img src="piano.jpg" alt="Piano">
+            <div class="content">
+                <h3>Piano</h3>
+                <p>The piano is a large keyboard instrument where strings are struck by hammers, producing a wide dynamic range and expressive musical possibilities.</p>
+            </div>
+        </a>
+        <a href="#" class="instrument-card">
+            <img src="trumpet.jpeg" alt="Trumpet">
+            <div class="content">
+                <h3>Trumpet</h3>
+                <p>The trumpet is a brass instrument known for its bright, powerful sound. It has been used in classical and jazz genres for centuries.</p>
+            </div>
+        </a>
+        <a href="#" class="instrument-card">
+            <img src="drumset.jpg" alt="Drum Set">
+            <div class="content">
+                <h3>Drum Set</h3>
+                <p>A drum set is a collection of percussion instruments, typically including bass drum, snare, toms, hi-hat, and cymbals, forming the rhythmic backbone of many music styles.</p>
+            </div>
+        </a>
+        <a href="#" class="instrument-card">
+            <img src="harp.jpg" alt="Harp">
+            <div class="content">
+                <h3>Harp</h3>
+                <p>The harp is a plucked string instrument featuring a triangular frame and numerous strings of varying lengths. Renowned for its ethereal, resonant sound, it provides both harmonic accompaniment and soloistic flourishes.</p>
+            </div>
+        </a>
+        <a href="#" class="instrument-card">
+            <img src="flute.jpg" alt="Flute">
+            <div class="content">
+                <h3>Flute</h3>
+                <p>The flute is a woodwind instrument that produces sound when air is blown across an opening. Typically made of metal or wood, it has a clear, bright timbre and an agile range spanning over three octaves. </p>
+            </div>
+        </a>
+    </section>
+
+</body>
+</html>
