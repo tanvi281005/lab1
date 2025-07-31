@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dance Forms Gallery</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+    header {
+      background: url('Classical Dances of India.jpg') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0,0,0,0.4);
+    }
+    header h1 {
+      position: relative;
+      color: #fff;
+      font-size: 3rem;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+      font-weight: 400; /* lighter weight for header */
+    }
+    .tagline {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 1.5rem;
+      background: #f9f9f9;
+    }
+    .gallery {
+      max-width: 1200px;
+      margin: 2rem auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      padding: 0 1rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-align: center;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      object-position: 50% 10%;
+    }
+    .card h3 {
+      padding: 0.5rem;         /* reduced padding */
+      font-size: 1rem;        /* smaller font size */
+      font-weight: 700;       /* bold font weight */
+      letter-spacing: 0.5px;  /* slight spacing */
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Celebrate the Art of Dance</h1>
+  </header>
+
+  <div class="tagline">
+    "Where every step tells a story — explore the world's dance forms."  
+  </div>
+
+  <section class="gallery">
+    <!-- Indian Classical -->
+    <a href="#bharatnatyam" class="card">
+      <img src="bharatnatyam.jpg" alt="Bharatnatyam">
+      <h3>Bharatnatyam</h3>
+    </a>
+    <a href="#kathak" class="card">
+      <img src="kathak.jpg" alt="Kathak">
+      <h3>Kathak</h3>
+    </a>
+    <a href="#kuchipudi" class="card">
+      <img src="Kuchipudi.jpg" alt="Kuchipudi">
+      <h3>Kuchipudi</h3>
+    </a>
+    <a href="#kathakali" class="card">
+      <img src="kathakali.jpg" alt="Kathakali">
+      <h3>Kathakali</h3>
+    </a>
+    <!-- ... add other Indian forms ... -->
+    <!-- Western Forms -->
+    <a href="#ballet" class="card">
+      <img src="ballet.jpg" alt="Ballet">
+      <h3>Ballet</h3>
+    </a>
+    <a href="#jazz" class="card">
+      <img src="jazz.jpg" alt="Jazz Dance">
+      <h3>Jazz</h3>
+    </a>
+    <a href="#hiphop" class="card">
+      <img src="hip hop.jpg" alt="Hip Hop">
+      <h3>Hip Hop</h3>
+    </a>
+    <a href="#salsa" class="card">
+      <img src="salsa.jpg" alt="Salsa">
+      <h3>Salsa</h3>
+    </a>
+    <!-- Total 15 cards -->
+    <a href="#odissi" class="card">
+      <img src="odissi.jpg" alt="Odissi">
+      <h3>Odissi</h3>
+    </a>
+    <a href="#manipuri" class="card">
+      <img src="manipuri.jpg" alt="Manipuri">
+      <h3>Manipuri</h3>
+    </a>
+    <a href="#mohiniyattam" class="card">
+      <img src="mohiniyattam.jpg" alt="Mohiniyattam">
+      <h3>Mohiniyattam</h3>
+    </a>
+    <a href="#contemporary" class="card">
+      <img src="contemporary.jpg" alt="Contemporary Dance">
+      <h3>Contemporary</h3>
+    </a>
+    <a href="#tap" class="card">
+      <img src="tap dance.jpg" alt="Tap Dance">
+      <h3>Tap Dance</h3>
+    </a>
+    <a href="#flamenco" class="card">
+      <img src="flamenco.jpg" alt="Flamenco">
+      <h3>Flamenco</h3>
+    </a>
+    <a href="#Lavani" class="card">
+      <img src="Lavani.jpg" alt="Lavani">
+      <h3>Lavani</h3>
+    </a>
+  </section>
+</body>
+</html>
