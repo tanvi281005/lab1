@@ -4,7 +4,204 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Fitness Landing Page</title>
-  <link rel="stylesheet" href="stylegym.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background: #fff;
+      color: #111;
+    }
+
+    header.hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5rem 8rem;
+      background-color: #fef6f1;
+      gap: 4rem;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #111;
+      line-height: 1.3;
+    }
+
+    .hero-text p {
+      margin-bottom: 1.5rem;
+      font-size: 1.25rem;
+      color: #444;
+    }
+
+    .hero-text button {
+      padding: 0.9rem 2rem;
+      background: #ff6600;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1rem;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .hero-text button:hover {
+      background: #e05500;
+    }
+
+    .hero-image img {
+      max-width: 400px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Combined features and plans section */
+    .info-section {
+      display: flex;
+      justify-content: space-around;
+      padding: 4rem 6rem;
+      gap: 3rem;
+      background: #fff;
+      flex-wrap: wrap;
+    }
+
+    .feature-box, .plan-box {
+      flex: 1;
+      max-width: 320px;
+      text-align: center;
+      background: #f9f9f9;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+      transition: transform 0.3s ease;
+    }
+
+    .feature-box:hover, .plan-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-box img {
+      width: 200px;
+      margin-bottom: 1.5rem;
+      border-radius: 12px;
+    }
+
+    .feature-box h2, .plan-box h2 {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
+    .feature-box p, .feature-box ul li, .plan-box p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 0.6rem;
+    }
+
+    .feature-box ul {
+      list-style: disc;
+      padding-left: 1.2rem;
+      text-align: left;
+    }
+
+    .plan-box h3 {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      color: #ff6600;
+    }
+
+    .plan-box p {
+      font-size: 1rem;
+      color: #444;
+      font-weight: 500;
+    }
+
+    .faq {
+      padding: 4rem 6rem;
+      background: #fff;
+    }
+
+    .faq h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #222;
+    }
+
+    .faq details {
+      margin-bottom: 1rem;
+      padding: 1rem;
+      background: #f8f8f8;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+
+    .faq summary {
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+
+    .newsletter {
+      padding: 3rem 6rem;
+      background: #fef6f1;
+      text-align: center;
+    }
+
+    .newsletter h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #222;
+    }
+
+    .newsletter input {
+      padding: 0.7rem;
+      width: 300px;
+      margin-right: 0.7rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .newsletter button {
+      padding: 0.7rem 1.5rem;
+      background: #ff6600;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .newsletter button:hover {
+      background: #e05500;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 960px) {
+      .info-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .feature-box, .plan-box {
+        max-width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -15,13 +212,13 @@
       <button>Get Started</button>
     </div>
     <div class="hero-image">
-      <img src="https://i.imgur.com/UX9PzhF.png" alt="Fitness model"/>
+      <img src="gym1.jpg" alt="Fitness model"/>
     </div>
   </header>
 
-  <section class="features">
+  <section class="info-section">
     <div class="feature-box">
-      <img src="https://i.imgur.com/Vgk0PpW.png" alt="Trainer" />
+      <img src="gym2.jpg" alt="Trainer" />
       <h2>Expert Guidance</h2>
       <p>Certified personal trainers guiding your transformation.</p>
     </div>
@@ -33,17 +230,16 @@
         <li>Supportive community</li>
       </ul>
     </div>
-  </section>
-
-  <section class="plans">
-    <h2>Choose Your Plan</h2>
-    <div class="plan">
-      <h3>Basic Membership</h3>
-      <p>Access to gym and basic training sessions.</p>
-    </div>
-    <div class="plan">
-      <h3>Premium Membership</h3>
-      <p>Includes all classes and personal trainer sessions.</p>
+    <div class="plan-box">
+      <h2>Choose Your Plan</h2>
+      <div class="plan">
+        <h3>Basic Membership</h3>
+        <p>Access to gym and basic training sessions.</p>
+      </div>
+      <div class="plan">
+        <h3>Premium Membership</h3>
+        <p>Includes all classes and personal trainer sessions.</p>
+      </div>
     </div>
   </section>
 
